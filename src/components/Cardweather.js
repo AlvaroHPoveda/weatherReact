@@ -19,7 +19,7 @@ const Cardweather = () => {
     ];
      
     const[temp,setTemp]=useState([0, " °C"]);
-    const [background, setBackground] = useState("");
+    const [background, setBackground] = useState();
     const{weather,isLoading,}=useCallapi()
    
     document.body.style = `background: url(${background})
@@ -41,7 +41,7 @@ const Cardweather = () => {
             setBackground(fund[2])
         }else if(description === "broken clouds"){
             setBackground(fund[3])
-        }else if(description === "mist"||"smoke"){
+        }else if(description === "mist"){
             setBackground(fund[4])
         }else if(description === "light rain"){
             setBackground(fund[5])
@@ -49,6 +49,8 @@ const Cardweather = () => {
             setBackground(fund[6])
         }else if(description === "snow"){
             setBackground(fund[7])
+        }else if(description === "smoke"){
+            setBackground(fund[4])
         }
         };
 
