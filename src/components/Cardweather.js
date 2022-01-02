@@ -51,6 +51,8 @@ const Cardweather = () => {
             setBackground(fund[7])
         }else if(description === "smoke"){
             setBackground(fund[4])
+        }else if(description === "moderate rain"){
+            setBackground(fund[5])
         }
         };
 
