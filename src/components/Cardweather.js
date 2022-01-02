@@ -25,10 +25,10 @@ const Cardweather = () => {
     document.body.style = `background: url(${background})
      no-repeat center center fixed;-webkit-background-size: cover;
      background-size: 100% 100%`;
-        
-    useEffect(() => {  
-        setTemp([Math.round(weather?.main.temp - 273.15)," °C"]);
-        changeBackground(weather?.weather[0].description);
+     
+     useEffect(() => {  
+         setTemp([Math.round(weather?.main.temp - 273.15)," °C"]);
+         changeBackground(weather?.weather[0].description);
     }, [weather?.main.temp,weather?.weather[0].description])
     
     const changeBackground = () => {
