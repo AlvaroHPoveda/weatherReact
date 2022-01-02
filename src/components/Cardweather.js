@@ -85,7 +85,7 @@ const Cardweather = () => {
                 <p>{weather?.weather[0].description}</p>
                 <p>{temp[0] + temp[1]}</p>
                 <button onClick={handleTemperature} className='button'>
-                    {temp[1]===" °C"?("Celsius"):("Fahrenheit")}</button>      
+                    {temp[1]===" °C"?("Fahrenheit"):("Celsius")}</button>      
             </div>
             <Cardbelow/>
         </div>
